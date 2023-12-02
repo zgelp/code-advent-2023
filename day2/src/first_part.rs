@@ -2,9 +2,9 @@ use serde::{Serialize, Deserialize};
 use std::collections::HashMap;
 
 #[derive(Serialize, Deserialize, Debug)]
-struct GameData {
-    game_id: u32,
-    color_counts: Vec<HashMap<String, u32>>,
+pub struct GameData {
+    pub game_id: u32,
+    pub color_counts: Vec<HashMap<String, u32>>,
 }
 
 struct PredefinedCounts {
@@ -73,7 +73,7 @@ mod tests {
 }
 
 
-fn parse_games(game_strings: Vec<String>) -> Vec<GameData> {
+pub(crate) fn parse_games(game_strings: Vec<String>) -> Vec<GameData> {
     game_strings.into_iter().map(|game_str| {
         let game_str = game_str.as_str();
         let parts: Vec<&str> = game_str.split(": ").collect();

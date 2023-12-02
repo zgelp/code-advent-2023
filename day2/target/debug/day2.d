@@ -1,0 +1,1 @@
+/Users/zigapregelj/Documents/Projects/code-advent-2023/day2/target/debug/day2: /Users/zigapregelj/Documents/Projects/code-advent-2023/day2/src/first_part.rs /Users/zigapregelj/Documents/Projects/code-advent-2023/day2/src/main.rs
